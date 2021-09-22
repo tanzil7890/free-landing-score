@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>Quick – Website UI Kit (FREE)</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+
+        * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+    <script language="javascript" type="text/javascript" src="asd.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
+        aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of
+                        cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Go Pro -->
+    <a href="#"
+        class="btn btn-block btn-dark text-truncate rounded-0 py-2 d-none d-lg-block" style="z-index: 1000;"
+        target="_blank">
+        <strong>This is a free demo.</strong> Click here to open the full version →
+    </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="Image placeholder" src="assets/img/brand/dark.svg" id="navbar-logo">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Overview</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Pages</a>
+                        <div class="dropdown-menu dropdown-menu-single">
+                            <a href="index.html" class="dropdown-item">Homepage</a>
+                            <a href="about.html" class="dropdown-item">About us</a>
+                            <a href="contact.html" class="dropdown-item">Contact</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="login.html" class="dropdown-item">Login</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="docs/index.html">Docs</a>
+                    </li>
+                </ul>
+                <!-- Button -->
+                <a class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3"
+                    href="https://github.com/webpixels/quick-website-ui-kit-demo/archive/master.zip">
+                    Download Free
+                </a>
+                <!-- Mobile button -->
+                <div class="d-lg-none text-center">
+                    <a href="https://webpixels.io/themes/quick-website-ui-kit"
+                        class="btn btn-block btn-sm btn-warning">See more details</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <section class="slice py-7">
+        
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="data:image/webp;base64,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" style="width:100%">
+            </div>
+        
+            <div class="mySlides2">
+                <img src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300" style="width:100%">
+            </div>
+        
+            <div class="mySlides2">
+                <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <!--<form action="display.html" method="GET">
+            <input type="text" name="serialNumber" />
+            <input type="submit" value="Submit" />
+        </form>-->
+        <form name="form1" action="next.html" method="get">
+            name:<input type="text" id="name" name="n">
+            <input type="submit" value="next">
+            <button type="button" id="print" onClick="testJS()"> Print </button>
+        </form>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- SVG shape -->
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
+                    viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve"
+                    class=" fill-section-secondary">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- Footer -->
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <!-- Theme's logo -->
+                        <a href="index.html">
+                            <img alt="Image placeholder" src="assets/img/brand/light.svg" id="footer-logo">
+                        </a>
+                        <!-- Webpixels' mission -->
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development
+                            experience to designers and developers by offering the tools needed for having a quick and
+                            solid start in most web projects.</p>
+                        
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Account</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Billing</a></li>
+                            <li><a href="#">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">About</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold"
+                                target="_blank">Webpixels</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+
+    <script>
+        var slideIndex = [1, 1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) { slideIndex[no] = 1 }
+                if (n < 1) { slideIndex[no] = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+            }
+    </script>
+    <script>
+        function testJS() {
+                var b = document.getElementById('name').value,
+                    url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+                document.location.href = url;
+            }
+    </script>
+</body>
+
+</html>
